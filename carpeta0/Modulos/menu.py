@@ -1,11 +1,14 @@
 import campers
+import rutas
 
 def menu_principal():
     while True:
         print("========CAMPUSLANDS========")
         print("1) Registrar Camper")
         print("2) Listar Campers")
-        print("3) Salir")
+        print("3) Crear Ruta")
+        print("4) Listar Rutas")
+        print("10) Salir")
 
         opcion = input("Seleccione una opcion: ")
 
@@ -14,6 +17,10 @@ def menu_principal():
         elif opcion == "2":
             campers.listar_campers()
         elif opcion == "3":
+            rutas.crear_ruta()
+        elif opcion == "4":
+            rutas.listar_rutas()
+        elif opcion == "10":
             print("Saliendo...")
             break
         else:
